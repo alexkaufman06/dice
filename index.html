@@ -3,13 +3,54 @@
   <head>
     <meta charset="UTF-8">
     <title>Dice Challenge</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/bootstrap-paper.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
     <script src="lib/angular.js"></script>
     <script src="app.js"></script>
   </head>
 
   <body>
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2">
+            <!-- <span class="sr-only">Toggle navigation</span> -->
+          </button>
+          <a class="navbar-brand main-header" href="#">posting.services</a>
+          <!-- 67B9BF -->
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+          <ul class="nav navbar-nav">
+            <li>
+              <a class="dropdown-toggle sub-header" ui-sref="campaigns" role="button" aria-expanded="false">
+                <span class="glyphicon glyphicon-globe"></span> Campaigns
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-toggle sub-header" ui-sref="leads" role="button" aria-expanded="false">
+                <span class="glyphicon glyphicon-user"></span> Leads
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-toggle sub-header" ui-sref="analytics" role="button" aria-expanded="false">
+                <span class="glyphicon glyphicon-signal"></span> Analytics
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-toggle sub-header" ui-sref="settings" role="button" aria-expanded="false">
+                <span class="glyphicon glyphicon-cog"></span> Settings
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-toggle sub-header" ui-sref="support" role="button" aria-expanded="false">
+                <span class="glyphicon glyphicon-question-sign"></span> Support
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
     <div class="container">
       <h1>TEST</h1>
     </div>
