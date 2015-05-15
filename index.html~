@@ -63,35 +63,31 @@
         <a>Branding</a>
       <span>
     </div>
-    <div class="container" ng-controller="DealerCtrl">
+    <div class="container">
       <span class="glyphicon glyphicon-menu-hamburger menu"></span>
       <div class="col-xs-6">
         <div class="form-set-1">
-<!--           <form ng-submit="addName()" class="form-inline" role="form"> -->
-            <label>Dealer Name</label><br>
-            <input ng-model="dealerName" class="form-control"><br>
-            <label>Street Address</label><br>
-            <input ng-model="dealerAddress" class="form-control"><br>
-            <label>City, State</label><br>
-            <input class="form-control"><br>
-            <button type="submit" class="btn btn-default">Submit</button>
-<!--           </form> -->
+          <label>Dealer Name</label>
+          <input ng-model="" class="form-control">
+          <label>Street Address</label>
+          <input ng-model="" class="form-control">
+          <label>City, State</label>
+          <input ng-model="" class="form-control">
         </div>
         <div class="form-set-2">
           <label>Phone Number</label>
-          <input class="form-control">
+          <input ng-model="" class="form-control">
           <label>Email</label>
-          <input class="form-control">
+          <input ng-model="" class="form-control">
         </div>
       </div>
       <div class="col-xs-6 info">
-        <h2 ng-repeat="item in dealers">{{item.address.name}} {{dealerName}}</h2>
-        <h3 ng-repeat="item in dealers">{{item.address.streetAddress1}} {{dealerAddress}}<h3>
-        <h3 ng-repeat="item in dealers">{{item.address.city}}, {{item.address.province}}<h3>
+        <h2>Steve's Dealership</h2>
+        <h3>1234 Street Ln.<h3>
+        <h3>City, State<h3>
         <h3>210-120-1224<h3>
-        <h3 ng-repeat="item in dealers">{{item.adSettings.emailTo[0].email}}<h3>
+        <h3>steve@dealer.com<h3>
       </div>
     </div>
   </body>
 <html>
-
