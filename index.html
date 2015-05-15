@@ -14,11 +14,7 @@
     <nav class="navbar navbar-inverse">
       <div class="container-fluid">
         <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2">
-            <!-- <span class="sr-only">Toggle navigation</span> -->
-          </button>
           <a class="navbar-brand main-header" href="#">posting.services</a>
-          <!-- 67B9BF -->
         </div>
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
           <ul class="nav navbar-nav">
@@ -37,9 +33,11 @@
                 <span class="glyphicon glyphicon-signal"></span> Analytics
               </a>
             </li>
-            <li>
+            <li class="open">
               <a class="dropdown-toggle sub-header" ui-sref="settings" role="button" aria-expanded="false">
-                <span class="glyphicon glyphicon-cog"></span> Settings
+                <span class="selected">
+                  <span class="glyphicon glyphicon-cog"></span> Settings
+                </span>
               </a>
             </li>
             <li>
@@ -48,11 +46,48 @@
               </a>
             </li>
           </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li>
+              <a>
+                <span class="glyphicon glyphicon-home"></span> Steve Sharts
+              </a>
+            <li>
+          </ul>
         </div>
       </div>
     </nav>
+    <div class="hacky-navbar">
+      <span class="nav2">
+        <a>General</a>
+        <a>Feed</a>
+        <a>Branding</a>
+      <span>
+    </div>
     <div class="container">
-      <h1>TEST</h1>
+      <span class="glyphicon glyphicon-menu-hamburger menu"></span>
+      <div class="col-xs-6">
+        <div class="form-set-1">
+          <label>Dealer Name</label>
+          <input ng-model="" class="form-control">
+          <label>Street Address</label>
+          <input ng-model="" class="form-control">
+          <label>City, State</label>
+          <input ng-model="" class="form-control">
+        </div>
+        <div class="form-set-2">
+          <label>Phone Number</label>
+          <input ng-model="" class="form-control">
+          <label>Email</label>
+          <input ng-model="" class="form-control">
+        </div>
+      </div>
+      <div class="col-xs-6 info">
+        <h2>Steve's Dealership</h2>
+        <h3>1234 Street Ln.<h3>
+        <h3>City, State<h3>
+        <h3>210-120-1224<h3>
+        <h3>steve@dealer.com<h3>
+      </div>
     </div>
   </body>
 <html>
